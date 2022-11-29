@@ -5,28 +5,38 @@
 
 }
 
-#grid_wrapper_meny{
+#grid_wrapper_meny {
     display: grid;
     height: 100vh;
     
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 80px 800px minmax(100px 1fr)
+    grid-template-rows: 80px 50px 800px 100px;
     grid-template-areas:
     "mhe mhe mhe"
     "mna mna mna"
     "ms1 ms2 ms3"
     "mfo mfo mfo";
-
 }
 
 #meny_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: mhe;
-    background-color: red;
+    background: red;
+}
+
+#meny_rubrik{
+    font-size: 4.5rem;
+    font-family: 'Rubik Distressed', cursive;
 }
 
 #meny_nav{
+    display: flex;
+    justify-content: space-evenly;
     grid-area: mna;
     background-color: orange;
+    padding-top: 5px;
 }
 
 #meny_s1{
@@ -41,15 +51,44 @@
 }
 
 #meny_s3{
+    display: flex;
+    flex-direction: column;
     grid-area: ms3;
     background-color: blueviolet;
+    justify-content: center;
+    padding: 20px;
     
 }
 
-#meny_footer{
-    grid-area: mfo;
-    background-color: yellowgreen;
+#logga_bild{
+    border-radius: 500px;
+    border: 5px solid black;
+    height: 300px;
+    width: auto;
+    margin-top: 50px;
 }
 
+#meny_valkommen_rubrik{
+    margin-top: 50px;
+    font-size: 2rem;
+    font-family: 'Rubik Glitch', cursive;
+}
 
+#meny_valkommen_text{
+    font-size: 1.5rem;
+}
+
+.meny_valkommen{
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#meny_footer{
+    display: flex;
+    grid-area: mfo;
+    background-color: yellowgreen;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
 
