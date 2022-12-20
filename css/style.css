@@ -200,10 +200,11 @@ a{
     color: white;
 }
 .nav_item{
-  
+    display: flex;
     padding: 1vh .5vw;
     border-radius: .25vw;
-    background-color: rgb(86, 12, 12,);
+    background-color: rgb(86, 12, 12);
+    justify-content: center;
     
   
 }
@@ -250,6 +251,16 @@ a:hover {
     height: 50vh;
   
 }
+
+#welcome_text{
+    width: 800px;
+    border-radius: 50px;
+    padding: 0 20px 0 50px;
+    
+}
+#margin_top_welcome{
+    margin-top: 30px;
+}
   
   
   
@@ -273,9 +284,9 @@ margin: 2vh 1vw;
   
 }
   
-.staff-box{
+.animal-box{
     height: 300px;
-    background-color: red;
+    background-color: rgb(102, 9, 9);
     display: flex;
     flex-direction: row;
     padding: 1vh 1vw;
@@ -288,13 +299,13 @@ margin: 2vh 1vw;
     width: 150px;
 }
   
-.staff-text-box{
+.animal-text-box{
     margin-left: 1vw;
     margin-top: 1vh;
   
 }
   
-.staff-img{
+.animal-img{
   
     height: 200px;
     border: 5px solid #5C4742;
@@ -316,7 +327,7 @@ margin: 2vh 1vw;
   
 .header,
 .footer {
-    background-color: rgb(87, 11, 11, 0.5);
+    background-color: rgba(93, 9, 9, 0.7);
     border-radius: 25px;
 }
   
@@ -420,5 +431,3 @@ margin: 2vh 1vw;
     width: auto;
     /*Kanske*/
   }
-
-
